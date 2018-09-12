@@ -1,0 +1,81 @@
+#### CSV Files
+change the directory name to "./countries.csv" from "countries.csv", for instance
+
+
+#### JS EVENTS
+
+You're probably only interested in a few mouse events, but: https://developer.mozilla.org/en-US/docs/Web/Events
+
+
+#### WHEN FAT ARROWS FAIL US
+
+
+This ES4 function:
+
+    function (d) {
+      d3.select(this).attr('fill', 'red')
+    }
+
+Becomes this ES6 function:
+
+    (d) => (d, i, nodes) {
+      d3.select(nodes[i]).attr('fill', 'red')
+    }
+
+We can't use 'this' with fat arrows
+
+
+
+
+#### YOUR .gitignore FILE CONTENTS
+
+You can start from gitignore.io
+
+    # Custom files
+    .DS_Store
+    dist
+
+    # Optional npm cache directory
+    .npm
+
+    # Optional eslint cache
+    .eslintcache
+
+    # parcel-bundler cache
+    .cache
+
+    # Logs
+    logs
+    *.log
+    npm-debug.log*
+    yarn-debug.log*
+    yarn-error.log*
+
+    # Optional npm cache directory
+    .npm
+
+    # dotenv environment variables file
+    .env
+
+    # Optional eslint cache
+    .eslintcache
+
+    # Dependency directories
+    node_modules/
+
+
+#### Event Listeners
+- Browser dependent, happens in browser
+- Mouse on, mouse off, etc
+- When that happens, the browser fires an event
+
+#### CSS Rules
+Three ways:
+1. External CSS file
+2. Style tag, with a bunch of styles
+3. Inline (which you should never do, except hiding and showing tool tips)
+
+To import d3: 
+In the .js file, at the top, add select * from d3 as 'd3'
+you can also select certain elements with select {scaleLinear. etc} from d3 as 'd3'
+
