@@ -79,3 +79,15 @@ To import d3:
 In the .js file, at the top, add select * from d3 as 'd3'
 you can also select certain elements with select {scaleLinear. etc} from d3 as 'd3'
 
+
+Absolute vs. relative paths
+<link rel="stylesheet" src="style.css">
+Look for style.css in the current directory of the website
+
+
+<link rel="stylesheet" src="/style.css">
+Look for style.css at the very top of the domain
+    For example: vpenney/projects
+
+
+
